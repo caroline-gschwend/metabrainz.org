@@ -17,6 +17,9 @@ def home():
 def about():
     return render_template('index/about.html')
 
+@index_bp.route('/team')
+def team():
+    return render_template('index/team.html')
 
 @index_bp.route('/contact')
 def contact():
