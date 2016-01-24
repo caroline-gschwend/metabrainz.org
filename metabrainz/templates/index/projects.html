@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects - MetaBrainz Foundation{% endblock %}
+
+{% block content %}
+<h1 class="page-title">The MetaBrainz Foundation Projects</h1>
+<div id="projects">
+  
+  <div class="media">
+    <div class="media-left media-middle">
+      <a href="https://musicbrainz.org/">
+        <img class="media-object" src="{{ url_for('static', 
+        filename='img/projects/MBnt.png') }}" alt="MusicBrainz logo">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><strong>MusicBrainz</strong></h4>
+      <p>
+        <a href="https://musicbrainz.org/">MusicBrainz</a> is a community-maintained open 
+        source music encyclopedia that collects music metadata and makes it available to 
+        the public.
+      </p>
+    </div>
+  </div>
+  
+  <div class="media">
+    <div class="media-left media-middle">
+      <a href="https://picard.musicbrainz.org/">
+        <img class="media-object" src="{{ url_for('static', 
+        filename='img/projects/MBPnt.png') }}" alt="MusicBrainz Picard logo">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><strong>MusicBrainz Picard</strong></h4>
+      <p>
+      <a href="https://picard.musicbrainz.org/">MusicBrainz Picard</a> is an open-source 
+      software application for identifying, tagging, and organizing digital audio 
+      recordings.
+      </p>
+    </div>
+  </div>
+
+  <div class="media">
+    <div class="media-left media-middle">
+      <a href="https://coverartarchive.org/">
+        <img class="media-object" src="{{ url_for('static', 
+        filename='img/projects/CAAnt.png') }}" alt="Cover Art Archive logo">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><strong>Cover Art Archive</strong></h4>
+      <p>
+      <a href="https://coverartarchive.org/">Cover Art Archive</a> is a database of cover 
+      art corresponding with the releases in MusicBrainz. Their goal is to make cover art 
+      images available to everyone on the Internet in an organized and convenient way.
+      </p>
+    </div>
+  </div>
+
+  <div class="media">
+    <div class="media-left media-middle">
+      <a href="https://critiquebrainz.org/">
+        <img class="media-object" src="{{ url_for('static', 
+        filename='img/projects/CBnt.png') }}" alt="CritiqueBrainz logo">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><strong>CritiqueBrainz</strong></h4>
+      <p>
+        <a href="https://critiquebrainz.org/">CritiqueBrainz</a> fills the gap between 
+        music critics and raw data by providing a platform created for the sole purpose 
+        of Creative Commons licensed music reviews.
+      </p>
+    </div>
+  </div>
+
+  <div class="media">
+    <div class="media-left media-middle">
+      <a href="https://acousticbrainz.org/">
+       <img class="media-object" src="{{ url_for('static', 
+       filename='img/projects/ABnt.png') }}" alt="AcousticBrainz logo">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><strong>AcousticBrainz</strong></h4>
+      <p>
+        <a href="http://acousticbrainz.org/">AcousticBrainz</a> aims to crowd source 
+        acoustic information for all music in the world and make it available to the 
+        public. Their goal is to provide a massive database of information about music.
+      </p>
+    </div>
+  </div>
+
+  <div class="media">
+    <div class="media-left media-middle">
+      <a href="https://bookbrainz.org/">
+        <img class="media-object" src="{{ url_for('static', 
+        filename='img/projects/BBnt.png') }}" alt="BookBrainz logo">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><strong>BookBrainz</strong></h4>
+      <p>
+        <a href="https://bookbrainz.org/">BookBrainz</a> is an online encyclopedia 
+        containing information about published literature. Their aim is to collect and 
+        store data about every book, magazine, journal, or other publication ever written.
+      </p>
+    </div>
+  </div>
+  
+  <div class="media">
+    <div class="media-left media-middle">
+      <a href="https://listenbrainz.org/">
+        <img class="media-object" src="{{ url_for('static', 
+        filename='img/projects/LBnt.png') }}" alt="ListenBrainz logo">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><strong>ListenBrainz</strong></h4>
+      <p>
+        <a href="https://listenbrainz.org/">ListenBrainz</a> is an open source music 
+        website that allows users to import their listen history. They hope that they 
+        will be able to provide enough data for developers to create new music 
+        recommendation systems.
+      </p>
+    </div>
+  </div>
+  
+  <div class="media">
+    <div class="media-left media-middle">
+      <a href="https://messybrainz.org/">
+        <img class="media-object" src="{{ url_for('static', 
+        filename='img/projects/MsBnt.png') }}" alt="MessyBrainz logo">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading"><strong>MessyBrainz</strong></h4>
+      <p>
+        <a href="http://messybrainz.org/">MessyBrainz</a> identifies unclean or 
+        misspelled metadata, and where possible, links it to stable MusicBrainz 
+        identifiers. MessyBrainz is being used within AcousticBrainz and ListenBrainz.
+      </p>
+    </div>
+  </div>
+  
+</div>
+
+{% endblock %}

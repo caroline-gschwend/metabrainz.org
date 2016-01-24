@@ -21,6 +21,11 @@ def about():
 @index_bp.route('/team')
 def team():
     return render_template('index/team.html')
+  
+    
+@index_bp.route('/projects')
+def projects():
+    return render_template('index/projects.html')
 
 
 @index_bp.route('/contact')
